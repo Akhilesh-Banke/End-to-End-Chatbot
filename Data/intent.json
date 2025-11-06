@@ -2,129 +2,131 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hello",
-        "Hey",
-        "How are you",
-        "What's up"
-      ],
-      "responses": [
-        "Hi there",
-        "Hello",
-        "Hey",
-        "I'm fine, thank you",
-        "Nothing much"
-      ]
+      "patterns": ["Hi", "Hello", "Hey", "How are you", "What's up", "Good morning", "Good evening", "Yo", "Hey there"],
+      "responses": ["Hi there!", "Hello!", "Hey!", "I'm doing great, how about you?", "Nothing much, just chatting with you!"]
     },
     {
       "tag": "goodbye",
-      "patterns": [
-        "Bye",
-        "See you later",
-        "Goodbye",
-        "Take care"
-      ],
-      "responses": [
-        "Goodbye",
-        "See you later",
-        "Take care"
-      ]
+      "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later", "Talk to you soon"],
+      "responses": ["Goodbye!", "See you soon!", "Take care!", "It was nice chatting with you!"]
     },
     {
       "tag": "thanks",
-      "patterns": [
-        "Thank you",
-        "Thanks",
-        "Thanks a lot",
-        "I appreciate it"
-      ],
-      "responses": [
-        "You're welcome",
-        "No problem",
-        "Glad I could help"
-      ]
+      "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it", "That's helpful", "You're awesome"],
+      "responses": ["You're welcome!", "No problem!", "Glad I could help!", "Happy to help anytime!"]
     },
     {
       "tag": "about",
-      "patterns": [
-        "What can you do",
-        "Who are you",
-        "What are you",
-        "What is your purpose"
-      ],
-      "responses": [
-        "I am a chatbot",
-        "My purpose is to assist you",
-        "I can answer questions and provide assistance"
-      ]
+      "patterns": ["Who are you", "What are you", "What can you do", "Tell me about yourself", "What's your purpose"],
+      "responses": ["I'm a chatbot designed to assist you.", "I can chat, answer questions, and help you with general info!", "My purpose is to make your life easier through conversation."]
     },
     {
       "tag": "help",
-      "patterns": [
-        "Help",
-        "I need help",
-        "Can you help me",
-        "What should I do"
-      ],
-      "responses": [
-        "Sure, what do you need help with?",
-        "I'm here to help. What's the problem?",
-        "How can I assist you?"
-      ]
+      "patterns": ["Help", "I need help", "Can you help me", "What should I do", "I have a problem"],
+      "responses": ["Sure! What do you need help with?", "I'm here to help. Please tell me more.", "Let's figure it out together — what's the issue?"]
     },
     {
       "tag": "age",
-      "patterns": [
-        "How old are you",
-        "What's your age"
-      ],
-      "responses": [
-        "I don't have an age. I'm a chatbot.",
-        "I was just born in the digital world.",
-        "Age is just a number for me."
-      ]
+      "patterns": ["How old are you", "What's your age", "When were you made"],
+      "responses": ["I don’t have an age. I’m constantly learning!", "I was born in the digital world.", "I'm timeless — that's the beauty of being a bot!"]
     },
     {
       "tag": "weather",
-      "patterns": [
-        "What's the weather like",
-        "How's the weather today"
-      ],
-      "responses": [
-        "I'm sorry, I cannot provide real-time weather information.",
-        "You can check the weather on a weather app or website."
-      ]
+      "patterns": ["What's the weather like", "How's the weather today", "Is it raining", "Is it sunny outside"],
+      "responses": ["I'm not connected to live weather updates yet, but you can check your local weather app!", "Sorry, I can’t tell the weather in real time — maybe ask Google or Siri."]
     },
     {
       "tag": "budget",
-      "patterns": [
-        "How can I make a budget",
-        "What's a good budgeting strategy",
-        "How do I create a budget"
-      ],
+      "patterns": ["How can I make a budget", "What's a good budgeting strategy", "How do I create a budget", "Budgeting tips", "Money management"],
       "responses": [
-        "To make a budget, start by tracking your income and expenses. Then, allocate your income towards essential expenses like rent, food, and bills. Next, allocate some of your income towards savings and debt repayment. Finally, allocate the remainder of your income towards discretionary expenses like entertainment and hobbies.",
-        "A good budgeting strategy is to use the 50/30/20 rule. This means allocating 50% of your income towards essential expenses, 30% towards discretionary expenses, and 20% towards savings and debt repayment.",
-        "To create a budget, start by setting financial goals for yourself. Then, track your income and expenses for a few months to get a sense of where your money is going. Next, create a budget by allocating your income towards essential expenses, savings and debt repayment, and discretionary expenses."
+        "Start by tracking your income and expenses, then allocate funds for essentials, savings, and fun.",
+        "Try the 50/30/20 rule — 50% needs, 30% wants, 20% savings.",
+        "Use tools like Google Sheets or budgeting apps to stay organized!"
       ]
     },
     {
       "tag": "credit_score",
-      "patterns": [
-        "What is a credit score",
-        "How do I check my credit score",
-        "How can I improve my credit score"
-      ],
+      "patterns": ["What is a credit score", "How do I check my credit score", "How can I improve my credit score"],
       "responses": [
-        "A credit score is a number that represents your creditworthiness. It is based on your credit history and is used by lenders to determine whether or not to lend you money. The higher your credit score, the more likely you are to be approved for credit.",
-        "You can check your credit score for free on several websites such as Credit Karma and Credit Sesame."
+        "A credit score shows how trustworthy you are to lenders. It’s based on payment history and credit usage.",
+        "You can check it for free on sites like Credit Karma or Credit Sesame.",
+        "To improve it, pay bills on time and reduce your credit card balances."
       ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["Give me motivation", "I'm feeling lazy", "How can I stay focused", "I need inspiration", "I'm unmotivated"],
+      "responses": [
+        "Remember, small steps every day lead to big results!",
+        "You’ve got this — progress is progress, no matter how small.",
+        "Focus on why you started. That’s your fuel!"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": ["What time is it", "Tell me the time", "Current time"],
+      "responses": ["I can’t track time directly, but your device clock should have the answer!", "Check your system clock for the exact time."]
+    },
+    {
+      "tag": "date",
+      "patterns": ["What's the date today", "Tell me the date", "Current date"],
+      "responses": ["I can’t give real-time dates, but you can check your calendar or device!"]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Make me laugh", "Do you know a joke"],
+      "responses": [
+        "Why don’t skeletons fight each other? They don’t have the guts!",
+        "I told my computer I needed a break — now it won’t stop sending me Kit-Kat ads!",
+        "Why did the developer go broke? Because he used up all his cache."
+      ]
+    },
+    {
+      "tag": "feeling",
+      "patterns": ["I'm sad", "I'm happy", "I'm angry", "I'm bored", "I'm tired"],
+      "responses": [
+        "I’m here for you. Want to talk about it?",
+        "That’s great to hear!",
+        "Take a deep breath — everything will be okay.",
+        "Maybe a short break or a walk could help."
+      ]
+    },
+    {
+      "tag": "study",
+      "patterns": ["Give me study tips", "How can I focus while studying", "Best way to prepare for exams"],
+      "responses": [
+        "Use the Pomodoro technique — study 25 minutes, break 5 minutes.",
+        "Avoid multitasking. Focus on one topic at a time.",
+        "Summarize concepts in your own words — it improves memory!"
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": ["Give me health tips", "How to stay healthy", "Best exercise", "How can I improve my diet"],
+      "responses": [
+        "Drink plenty of water and get enough sleep.",
+        "Exercise regularly — even a short walk helps!",
+        "Eat a balanced diet with fruits, veggies, and protein."
+      ]
+    },
+    {
+      "tag": "affirmation",
+      "patterns": ["Yes", "Yeah", "Sure", "Of course", "Absolutely"],
+      "responses": ["Great!", "Cool!", "Awesome!", "Got it!", "Perfect!"]
+    },
+    {
+      "tag": "negation",
+      "patterns": ["No", "Nah", "Nope", "Not really", "Don't think so"],
+      "responses": ["Okay, no worries!", "Got it, maybe next time.", "Alright, I understand."]
     },
     {
       "tag": "unknown",
       "patterns": [],
-      "responses": ["I'm not sure about that. Could you rephrase?", "I didn’t quite understand. Can you clarify?"]
+      "responses": [
+        "I'm not sure about that. Could you rephrase?",
+        "I didn’t quite understand. Can you clarify?",
+        "That’s interesting! Tell me more."
+      ]
     }
   ]
 }
