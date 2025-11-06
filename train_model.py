@@ -23,7 +23,7 @@ INTENTS_PATH = DATA_DIR / "intent.json"
 lemmatizer = WordNetLemmatizer()
 
 # Load intents
-with open(INTENTS_PATH, "r") as f:
+with open(INTENTS_PATH, "r", encoding="utf-8") as f:
     intents = json.load(f)
 
 words = []
