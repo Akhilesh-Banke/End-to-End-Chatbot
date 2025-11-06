@@ -1,16 +1,23 @@
+from pathlib import Path
 import json
-import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 import pickle
 
+BASE = Path(__file__).resolve().parent
+DATA_PATH = BASE / "Data" / "intent.json"
+MODEL_PATH = BASE / "chatbot_model.pkl"
+
 # Load intents
-with open("data/intents.json", "r") as file:
-    intents = json.load(file)["intents"]
+if not DATA_PATH.exists():
+    raise FileNotFoundError(f"Could not find intents file at: {DATA_PATH}")
+
+with open(DATA_PATH, "r", encoding="utf-8") as f:
+    intents = json.load(f)["intents"]
 
 patterns, tags = [], []
 for intent in intents:
-    for pattern in intent["patterns"]:
+    for pattern in intent.get("patterns", []):
         patterns.append(pattern)
         tags.append(intent["tag"])
 
@@ -21,5 +28,7 @@ clf = LogisticRegression(max_iter=200)
 clf.fit(X, tags)
 
 # Save model and vectorizer
-pickle.dump((vectorizer, clf), open("chatbot_model.pkl", "wb"))
-print("✅ Model trained and saved successfully!")
+with open(MODEL_PATH, "wb") as f:
+    pickle.dump((vectorizer, clf), f)
+
+print(f"✅ Model trained and saved successfully at: {MODEL_PATH}")
