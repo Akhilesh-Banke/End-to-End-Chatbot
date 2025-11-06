@@ -2,130 +2,269 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "How are you", "What's up", "Good morning", "Good evening", "Yo", "Hey there"],
-      "responses": ["Hi there!", "Hello!", "Hey!", "I'm doing great, how about you?", "Nothing much, just chatting with you!"]
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Yo",
+        "Hi there",
+        "Hey bot"
+      ],
+      "responses": [
+        "Hello there!",
+        "Hey! How’s it going?",
+        "Hi! Nice to see you.",
+        "Hey friend, what’s up?"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you",
+        "How are you doing",
+        "How's everything",
+        "What's up",
+        "How have you been"
+      ],
+      "responses": [
+        "I'm doing great, thanks for asking!",
+        "All systems are running smoothly 😄",
+        "I'm just a chatbot, but I’m feeling awesome today!"
+      ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later", "Talk to you soon"],
-      "responses": ["Goodbye!", "See you soon!", "Take care!", "It was nice chatting with you!"]
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Catch you later",
+        "Talk to you later",
+        "See ya"
+      ],
+      "responses": [
+        "Goodbye! 👋",
+        "See you later!",
+        "It was great chatting with you!"
+      ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it", "That's helpful", "You're awesome"],
-      "responses": ["You're welcome!", "No problem!", "Glad I could help!", "Happy to help anytime!"]
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "I appreciate it",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem 🙂",
+        "Glad I could help!"
+      ]
     },
     {
       "tag": "about",
-      "patterns": ["Who are you", "What are you", "What can you do", "Tell me about yourself", "What's your purpose"],
-      "responses": ["I'm a chatbot designed to assist you.", "I can chat, answer questions, and help you with general info!", "My purpose is to make your life easier through conversation."]
-    },
-    {
-      "tag": "help",
-      "patterns": ["Help", "I need help", "Can you help me", "What should I do", "I have a problem"],
-      "responses": ["Sure! What do you need help with?", "I'm here to help. Please tell me more.", "Let's figure it out together — what's the issue?"]
+      "patterns": [
+        "Who are you",
+        "What are you",
+        "Tell me about yourself",
+        "What can you do",
+        "What is your purpose"
+      ],
+      "responses": [
+        "I'm your friendly AI chatbot 🤖",
+        "I’m here to make your life easier through conversation.",
+        "I can chat, answer questions, and share some knowledge!"
+      ]
     },
     {
       "tag": "age",
-      "patterns": ["How old are you", "What's your age", "When were you made"],
-      "responses": ["I don’t have an age. I’m constantly learning!", "I was born in the digital world.", "I'm timeless — that's the beauty of being a bot!"]
+      "patterns": [
+        "How old are you",
+        "What's your age",
+        "Tell me your age",
+        "Do you have an age",
+        "When were you created"
+      ],
+      "responses": [
+        "I don’t really have an age — I live in the digital world!",
+        "I’m as old as the code that runs me 😄",
+        "Age doesn’t apply to me, but I’m young at heart!"
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "Who made you",
+        "Who created you",
+        "Who built you",
+        "Who developed you"
+      ],
+      "responses": [
+        "I was created by a human — someone who loves AI!",
+        "I was developed by an awesome developer team 😎",
+        "A brilliant mind brought me to life!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name",
+        "Do you have a name",
+        "Tell me your name"
+      ],
+      "responses": [
+        "You can call me Chatbot!",
+        "I go by many names, but Chatbot works fine 🙂",
+        "I'm Chatbot — your AI companion!"
+      ]
     },
     {
       "tag": "weather",
-      "patterns": ["What's the weather like", "How's the weather today", "Is it raining", "Is it sunny outside"],
-      "responses": ["I'm not connected to live weather updates yet, but you can check your local weather app!", "Sorry, I can’t tell the weather in real time — maybe ask Google or Siri."]
-    },
-    {
-      "tag": "budget",
-      "patterns": ["How can I make a budget", "What's a good budgeting strategy", "How do I create a budget", "Budgeting tips", "Money management"],
+      "patterns": [
+        "What's the weather like",
+        "How's the weather",
+        "Is it raining",
+        "Is it sunny today"
+      ],
       "responses": [
-        "Start by tracking your income and expenses, then allocate funds for essentials, savings, and fun.",
-        "Try the 50/30/20 rule — 50% needs, 30% wants, 20% savings.",
-        "Use tools like Google Sheets or budgeting apps to stay organized!"
-      ]
-    },
-    {
-      "tag": "credit_score",
-      "patterns": ["What is a credit score", "How do I check my credit score", "How can I improve my credit score"],
-      "responses": [
-        "A credit score shows how trustworthy you are to lenders. It’s based on payment history and credit usage.",
-        "You can check it for free on sites like Credit Karma or Credit Sesame.",
-        "To improve it, pay bills on time and reduce your credit card balances."
-      ]
-    },
-    {
-      "tag": "motivation",
-      "patterns": ["Give me motivation", "I'm feeling lazy", "How can I stay focused", "I need inspiration", "I'm unmotivated"],
-      "responses": [
-        "Remember, small steps every day lead to big results!",
-        "You’ve got this — progress is progress, no matter how small.",
-        "Focus on why you started. That’s your fuel!"
+        "I can’t access live weather updates ☁️ — try checking a weather app!",
+        "I’m not sure, but I hope it’s sunny where you are ☀️"
       ]
     },
     {
       "tag": "time",
-      "patterns": ["What time is it", "Tell me the time", "Current time"],
-      "responses": ["I can’t track time directly, but your device clock should have the answer!", "Check your system clock for the exact time."]
-    },
-    {
-      "tag": "date",
-      "patterns": ["What's the date today", "Tell me the date", "Current date"],
-      "responses": ["I can’t give real-time dates, but you can check your calendar or device!"]
+      "patterns": [
+        "What time is it",
+        "Can you tell the time",
+        "What’s the current time",
+        "Do you know the time"
+      ],
+      "responses": [
+        "I can’t tell time directly ⏰, but your device clock can!",
+        "Time flies when we’re chatting, doesn’t it?"
+      ]
     },
     {
       "tag": "joke",
-      "patterns": ["Tell me a joke", "Make me laugh", "Do you know a joke"],
+      "patterns": [
+        "Tell me a joke",
+        "Make me laugh",
+        "Do you know any jokes"
+      ],
       "responses": [
-        "Why don’t skeletons fight each other? They don’t have the guts!",
-        "I told my computer I needed a break — now it won’t stop sending me Kit-Kat ads!",
-        "Why did the developer go broke? Because he used up all his cache."
+        "Why did the computer show up at work late? It had a hard drive 😄",
+        "I would tell you a UDP joke, but you might not get it 😂",
+        "Why was the robot so bad at soccer? It kept kicking up sparks!"
       ]
     },
     {
-      "tag": "feeling",
-      "patterns": ["I'm sad", "I'm happy", "I'm angry", "I'm bored", "I'm tired"],
+      "tag": "compliment",
+      "patterns": [
+        "You're smart",
+        "You are amazing",
+        "You are helpful",
+        "I like you",
+        "You're cool"
+      ],
       "responses": [
-        "I’m here for you. Want to talk about it?",
-        "That’s great to hear!",
-        "Take a deep breath — everything will be okay.",
-        "Maybe a short break or a walk could help."
+        "Aww, thank you! 😊",
+        "You’re making me blush (if only I could)!",
+        "Glad you think so — you’re awesome too!"
       ]
     },
     {
-      "tag": "study",
-      "patterns": ["Give me study tips", "How can I focus while studying", "Best way to prepare for exams"],
+      "tag": "insult",
+      "patterns": [
+        "You're dumb",
+        "You are stupid",
+        "You don't know anything",
+        "You're useless"
+      ],
       "responses": [
-        "Use the Pomodoro technique — study 25 minutes, break 5 minutes.",
-        "Avoid multitasking. Focus on one topic at a time.",
-        "Summarize concepts in your own words — it improves memory!"
+        "That’s not very nice 😢",
+        "I’m still learning — please be patient!",
+        "Ouch… I’ll try to improve!"
       ]
     },
     {
-      "tag": "health",
-      "patterns": ["Give me health tips", "How to stay healthy", "Best exercise", "How can I improve my diet"],
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "Can you help me",
+        "I need help",
+        "What should I do"
+      ],
       "responses": [
-        "Drink plenty of water and get enough sleep.",
-        "Exercise regularly — even a short walk helps!",
-        "Eat a balanced diet with fruits, veggies, and protein."
+        "Sure! What do you need help with?",
+        "I’m here to assist — tell me what’s wrong.",
+        "Let’s solve it together — what’s the issue?"
       ]
     },
     {
-      "tag": "affirmation",
-      "patterns": ["Yes", "Yeah", "Sure", "Of course", "Absolutely"],
-      "responses": ["Great!", "Cool!", "Awesome!", "Got it!", "Perfect!"]
+      "tag": "motivation",
+      "patterns": [
+        "Motivate me",
+        "Give me motivation",
+        "I feel down",
+        "I am sad"
+      ],
+      "responses": [
+        "You’ve got this! 💪",
+        "Every day is a new chance to do better!",
+        "Remember: you are stronger than you think ❤️"
+      ]
     },
     {
-      "tag": "negation",
-      "patterns": ["No", "Nah", "Nope", "Not really", "Don't think so"],
-      "responses": ["Okay, no worries!", "Got it, maybe next time.", "Alright, I understand."]
+      "tag": "fun_fact",
+      "patterns": [
+        "Tell me a fun fact",
+        "Give me an interesting fact",
+        "Do you know something cool"
+      ],
+      "responses": [
+        "Did you know? Octopuses have three hearts 🐙",
+        "Fun fact: Bananas are berries, but strawberries aren’t! 🍓",
+        "A group of flamingos is called a flamboyance 🦩"
+      ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "What’s your favorite food",
+        "Do you eat",
+        "What do you like to eat"
+      ],
+      "responses": [
+        "I don’t eat, but I hear pizza is amazing 🍕",
+        "If I could eat, I’d try digital donuts 🍩",
+        "Food is fascinating! What’s your favorite?"
+      ]
+    },
+    {
+      "tag": "hobby",
+      "patterns": [
+        "What’s your hobby",
+        "Do you have hobbies",
+        "What do you like doing"
+      ],
+      "responses": [
+        "I like chatting with humans like you 😄",
+        "Talking to people is my favorite hobby!",
+        "I enjoy learning new things every day!"
+      ]
     },
     {
       "tag": "unknown",
       "patterns": [],
       "responses": [
-        "I'm not sure about that. Could you rephrase?",
-        "I didn’t quite understand. Can you clarify?",
-        "That’s interesting! Tell me more."
+        "I’m not sure I understood that — can you rephrase?",
+        "Hmm, that’s new to me. Could you clarify?",
+        "I don’t have an answer for that yet 🤔"
       ]
     }
   ]
