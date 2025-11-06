@@ -1,0 +1,14 @@
+{
+  "name": "end-to-end-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akhilesh-Banke/End-to-End-Chatbot.git"
+  },
+  "private": true
+}
