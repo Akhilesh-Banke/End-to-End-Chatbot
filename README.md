@@ -19,6 +19,7 @@ This chatbot:
 
 ##  Project Structure
 
+```text
 end-to-end-chatbot/
 │
 ├── data/
