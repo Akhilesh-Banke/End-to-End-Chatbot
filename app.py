@@ -1,5 +1,5 @@
 import streamlit as st
-from chatbot import get_response
+from Chatbot import get_response
 
 st.set_page_config(page_title="AI Chatbot", page_icon="🤖")
 
