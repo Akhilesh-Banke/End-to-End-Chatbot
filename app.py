@@ -75,7 +75,7 @@ def get_response(intents_list, intents_json):
 st.set_page_config(page_title="AI Chatbot", page_icon="💬", layout="centered")
 
 st.title("🤖 AI Chatbot Assistant")
-st.write("Chat with your intelligent assistant trained on custom intents!")
+st.write("Chat with my intelligent assistant trained on custom intents! - By Akhilesh :)")
 
 # Chat input
 if "chat_history" not in st.session_state:
