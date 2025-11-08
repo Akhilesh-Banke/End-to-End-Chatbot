@@ -4,13 +4,16 @@ import pickle
 import numpy as np
 import streamlit as st
 from tensorflow.keras.models import load_model
-from nltk.stem import WordNetLemmatizer
 from pathlib import Path
-import nltk
 
 # Ensure nltk data is available
-nltk.download("punkt")
-nltk.download("wordnet")
+from nltk.stem import WordNetLemmatizer
+import nltk
+
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('omw-1.4', quiet=True)
+
 
 # Setup paths
 BASE = Path(__file__).resolve().parent
