@@ -58,5 +58,5 @@ https://github.com/Akhilesh-Banke/End-to-End-Chatbot.git
 streamlit run app.py
 ```
 
-Visit the browser at: http://localhost:8501
-To Chat with my AI assistant!
+Visit the browser at: https://end-to-end-chatbot-akhilesh.streamlit.app
+To Chat with my small AI assistant!
